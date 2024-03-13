@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>WingStop</title>
+    <title>MilkSoulFood</title>
     <!-- x-icon  -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- custom css  -->
@@ -25,6 +25,23 @@
     <!-- slick  -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
+    <style>
+        .mybtn {
+            color: #fff;
+            background-color: #f5763f;
+            border-color: #f89d44;
+        }
+
+        .mybg {
+            background-color: #f5763f;
+        }
+
+        .myetxt {
+            color: #f5763f;
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -32,11 +49,11 @@
     <header>
         <section class="header-section ">
             <div class="header-top me-auto">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                     <div class="container">
 
                         <a class="navbar-brand f-w-bold" href="/"><img src="images/logo.png" class="width-50"
-                                style="width: 150px;" alt="logo"></a>
+                                style="width: 100px; height: 100px;" alt="logo"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -44,16 +61,36 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
+                                <li class="nav-item" id="menu-hover">
                                     <a class="nav-link active text-dark fw-bolder fs-5" aria-current="page"
-                                        href="menu.html">Menu</a>
+                                        href="newmenu.html">Menu</a>
+                                    <ul class="dropdown-menu p-4">
+                                        <!-- Add your dropdown items here -->
+                                        <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
+                                                href="categeories/breakfast.html">Breakfast</a></li>
+                                        <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
+                                                href="categeories/omlet.html">Omlets</a></li>
+                                        <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
+                                                href="categeories/kidsbreakfast.html">Kids Breakfst</a></li>
+                                        <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
+                                                href="categeories/kidslunch.html">Kids Lunch</a></li>
+                                        <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
+                                                href="categeories/burgerandsandwich.html">Burger & Sandwiches</a></li>
+                                        <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
+                                                href="categeories/burgerandsandwich.html">Grilled Fish</a></li>
+                                        <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
+                                                href="categeories/salads.html">Salads</a></li>
+                                        <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
+                                                href="categeories/dinner.html">Dinner</a></li>
+                                        <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
+                                                href="categeories/wings.html">Wings</a></li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark fw-bolder fs-5" href="/hero.html">Flavours</a>
+                                    <a class="nav-link text-dark fw-bolder fs-5" href="/flavours.html">Flavours</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark fw-bolder fs-5" href="hero.html">WingCalculator<sup
-                                            class="fs-6 fw-normal">TM</sup></a>
+                                    <a class="nav-link text-dark fw-bolder fs-5" href="about-us.html">About Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-dark fw-bolder fs-5 " href="locations.html">Locations</a>
@@ -61,46 +98,42 @@
 
 
                             </ul>
-                            <button class="btn-success px-4 text-uppercase rounded text-white border no-border">
+                            <button class="mybtn px-4 text-uppercase rounded text-white border no-border">
                                 <div class="all d-flex gap-3 align-items-center ">
                                     <div><i class="fa-solid fa-people-carry-box"> </i></div>
                                     <div class="d-flex flex-column">
                                         <a class="text-decoration-none" href="locations.html"><span
-                                                class="text-white fw-normal">Order</span></a>
+                                                class="text-white fw-normal">Delivery</span></a>
                                         <a class="text-decoration-none" href="locations-deliver.html"><span
                                                 class="fw-bolder text-white ">Carryout</span></a>
                                     </div>
                                 </div>
 
                             </button>
-                            <button class="btn-success px-4 text-uppercase rounded text-whiteborder  border-0 ">
-                                <div class="all d-flex gap-3 align-items-center ">
-                                    <div><i class="fa-solid fa-truck d"></i></div>
-                                    <div class="d-flex flex-column">
-                                        <span class="text-white fw-normal">Order</span>
-                                        <span class="fw-bolder text-white ">Delivery</span>
-                                    </div>
-                                </div>
-                            </button>
 
-                            <button class="btn mx-2 fw-bold">English <br>
-                                <i class="fa-solid fa-language"></i></i></button>
 
-                            <li class="nav-item dropdown" style="list-style: none" ;>
-                                <a class="nav-link dropdown-toggle" style="list-style: none" ; href="#"
-                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <button class="btn "><i class="fa-regular fa-user"></i></button>
-                                </a>
-                                <ul style="list-style: none;" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" style="list-style: none" ; href="login.html">Login</a>
-                                    </li>
-                                    <li><a class="dropdown-item" style="list-style: none" ; href="signup.html">Sign
-                                            Up</a>
-                                    </li>
+                            <div class="d-flex gap-1  align-items-center">
 
-                                </ul>
-                            </li>
-                            <button class="btn mx-2 fw-bold"> <i class="fa-solid fa-cart-shopping"></i></button>
+                                <li class="nav-item dropdown" style="list-style: none" ;>
+                                    <a class="nav-link dropdown-toggle" style="list-style: none" ; href="#"
+                                        id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="true">
+                                        <button class="btn">
+                                            <i class="fa-solid fa-right-to-bracket" style="color: black;"></i>
+                                        </button>
+                                    </a>
+                                    <ul style="list-style: none;" class="dropdown-menu fs-5"
+                                        aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" style="list-style: none" ;
+                                                href="login.html">Login</a></li>
+                                        <li><a class="dropdown-item" style="list-style: none" ; href="signup.html">Sign
+                                                Up</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <a href="/checkout.html"><button class="btn mx-2 fw-bold"> <i class="fa-solid fa-cart-shopping"></i></button></a>
+                            </div>
 
 
                         </div>
@@ -117,29 +150,33 @@
     <main class="my-4">
         <section class="section-locations">
             <div class="carryout">
-                <div class="container">
+                <div class="container-fluid">
                     <h1 class="text-bolder fs-1 text-uppercase">Get Started</h1>
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                            <a href="/locations.html "><button id="carryout"
-                                    style="border-radius:25px; padding: 5px 40px;"
-                                    class="text-uppercase fw-bolder fs-4  btn-outline-dark btn"> <i
-                                        class="fa-solid fa-people-carry-box"></i> Carryout
 
-                                </button></a>
-                            <a href="locations-deliver.html">
-                                <button id="delivery"
-                                    style="border-radius:25px; position: relative; right:40px;padding: 5px 50px;"
-                                    class=" text-uppercase fw-bolder fs-4 text-white bg-dark btn    "><i
-                                        class="fa-solid fa-car-on"></i> Delivery
+                            <div class="d-flex flex-wrap gap-2">
 
-                                </button>
-                            </a>
+                                <a href="locations.html"><button id="carryout"
+                                        style="border-radius:25px; padding: 5px 40px ;"
+                                        class="text-uppercase fw-bolder fs-4  btn-outline-dark btn "> <i
+                                            class="fa-solid fa-people-carry-box"></i> Carryout
+
+                                    </button></a>
+
+                                <a href="locations-deliver.html"><button id="delivery"
+                                        style="border-radius:25px; padding: 5px 50px;"
+                                        class="text-uppercase fw-bolder fs-4 text-white bg-dark bt"><i
+                                            class="fa-solid fa-car-on"></i> Delivery
+
+                                    </button></a>
+                            </div>
+
 
                             <br>
                             <p class="fw-bold m-2 ">Search Zip or City, State</p>
-                            <input style="width:450px; border-radius:25px; padding: 5px 100px;" type="search" name=""
-                                id="" class=" rounded p-2">
+                            <input style=" border-radius:25px; padding: 5px 100px;" type="search" name="" id=""
+                                class=" rounded p-2 w-100">
 
                             <div class="tab-section  mt-4   p-2" style="background-color: #f8f8f8;">
                                 <div class="inline-block">
@@ -154,8 +191,7 @@
                                     Get the most flavor for your click when you log in . View your recent locations for
                                     faster checkout, every time.
                                 </p>
-                                <button
-                                    class="btn btn-lg text-uppercase text-bolder fs-4 w-100 bg-success text-white">use
+                                <button class="btn btn-lg  text-uppercase text-bolder fs-4 w-100 mybtn  text-white">use
                                     my
                                     current location</button>
 
@@ -182,7 +218,7 @@
                 <li>CONTACTS</li>
                 <li>GIFT CARDS</li>
                 <li> CAREERS</li>
-                <li>WINGSTOP CHARITIES</li>
+                <li>MilkSoulFood CHARITIES</li>
                 <li>NEWS & STORIES</li>
             </ul>
         </div>
@@ -195,7 +231,7 @@
             <li>Sitemap</li>
             <li>Accessibility</li>
             <li>Investor Relations</li>
-            <li>Own a Wingstop</li>
+            <li>Own a MilkSoulFood</li>
             <li>Nutritional Info</li>
             <li>Allergen Info</li>
             <li>FAQ</li>
@@ -223,7 +259,7 @@
             </div>
 
         </div>
-        <p class="mb-2 text-center">&copy; Wingstop Restaurants, Inc. 2024 -
+        <p class="mb-2 text-center">&copy; MilkSoulFood Restaurants, Inc. 2024 -
             <script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
         </p>
     </footer>

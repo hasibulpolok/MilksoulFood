@@ -1,0 +1,35 @@
+.login-btn-cls {
+    width: 70%;
+}
+
+@media all and (max-width:515px) {
+    .login-btn-cls {
+        width: 100%;
+    }
+
+
+}
+
+@media all and (max-width:281px){
+   button.addtoorderbtn{
+    font-size: 15px !important;
+    text-wrap: nowrap;
+   }
+   #icon-arrow{
+    display: none !important;
+   }
+}
+
+@media all and (max-width:1400px){
+    
+    #orderimage{
+        width: 300px !important;
+    }
+}
+
+@media all and (max-width:994px){
+    #login-image{display: none;}
+    #orderimage{
+        width: 100% !important;
+    }
+}

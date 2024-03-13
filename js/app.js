@@ -1,69 +1,76 @@
+document.addEventListener('DOMContentLoaded', function () {
+    var menuHover = document.getElementById('menu-hover');
+    var dropdownMenu = menuHover.querySelector('.dropdown-menu');
 
+    // Show dropdown on hover
+    menuHover.addEventListener('mouseover', function () {
+        dropdownMenu.style.display = 'block';
+    });
 
-const swiper = new Swiper('.swiper', {
+    // Hide dropdown on mouseout
+    menuHover.addEventListener('mouseout', function () {
+        dropdownMenu.style.display = 'none';
+    });
 
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-
-    
+    // Add click event listeners to submenu links
+    var submenuLinks = dropdownMenu.querySelectorAll('a');
+    submenuLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            // Get the href attribute and navigate to the corresponding route
+            var href = link.getAttribute('href');
+            if (href) {
+                window.location.href = href;
+            }
+        });
+    });
 });
 
 
-document.getElementsByClassName('newswiper');
-const swiper1 = new Swiper('.newswiper', {
-
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-        el: '.newswiper-pagination',
-        
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.newswiper-button-next',
-        prevEl: '.newswiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.newswiper-scrollbar',
-    },
-
-    
-});
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsiveClass:true,
+    dot:false,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:false,
+            loop:false
+        }
+    }
+})
 
 
-function rangeSlider(value){
-    document.getElementById('rangeValue').innerHTML=value;
-};
 
-function rangeSlider2(value){
-    document.getElementById('rangeValue2').innerHTML=value;
-}
+// increment decrement checkout 
+var numberElement = document.getElementById('number');
+  var currentNumber = 0;
 
-function chnageTab(){
-    document.getElementsByClassName('herostyle').style.fontSize=40;
-    document.getElementsByClassName('herostyle').style.fontWeight="bold";
-}
+  function incrementNumber() {
+    currentNumber++;
+    updateNumber();
+  }
+
+  function decrementNumber() {
+    if (currentNumber > 0) {
+      currentNumber--;
+      updateNumber();
+    }
+  }
+
+  function updateNumber() {
+    numberElement.innerText = currentNumber;
+  }
+
+
+

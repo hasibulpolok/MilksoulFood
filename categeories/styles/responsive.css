@@ -1,0 +1,15 @@
+.login-btn-cls {
+    width: 70%;
+}
+
+@media all and (max-width:515px) {
+    .login-btn-cls {
+        width: 100%;
+    }
+
+
+}
+
+@media all and (max-width:994px){
+    #login-image{display: none;}
+}

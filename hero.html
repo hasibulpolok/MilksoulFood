@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>WingStop</title>
+    <title>MilkSoulFood</title>
     <!-- x-icon  -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- custom css  -->
@@ -25,6 +25,23 @@
     <!-- slick  -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
+    <style>
+        .mybtn {
+            color: #fff;
+            background-color: #f5763f;
+            border-color: #f89d44;
+        }
+
+        .mybg {
+            background-color: #f5763f;
+        }
+
+        .myetxt {
+            color: #f5763f;
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -32,11 +49,11 @@
     <header>
         <section class="header-section ">
             <div class="header-top me-auto">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                     <div class="container">
 
                         <a class="navbar-brand f-w-bold" href="/"><img src="images/logo.png" class="width-50"
-                                style="width: 150px;" alt="logo"></a>
+                                style="width: 100px; height: 100px;" alt="logo"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -49,11 +66,10 @@
                                         href="menu.html">Menu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark fw-bolder fs-5" href="flavours.html">Flavours</a>
+                                    <a class="nav-link text-dark fw-bolder fs-5" href="/flavours.html">Flavours</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark fw-bolder fs-5" href="hero.html">WingCalculator<sup
-                                            class="fs-6 fw-normal">TM</sup></a>
+                                    <a class="nav-link text-dark fw-bolder fs-5" href="about-us.html">About Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-dark fw-bolder fs-5 " href="locations.html">Locations</a>
@@ -61,44 +77,50 @@
 
 
                             </ul>
-                            <button class="btn-success px-4 text-uppercase rounded text-white border no-border">
+                            <button class="mybtn px-4 text-uppercase rounded text-white border no-border">
                                 <div class="all d-flex gap-3 align-items-center ">
                                     <div><i class="fa-solid fa-people-carry-box"> </i></div>
-                                    <div class="d-flex flex-column">
-                                        <span class="text-white fw-normal">Order</span>
-                                        <span class="fw-bolder text-white ">Carryout</span>
-                                    </div>
-                                </div>
-
-                            </button>
-                            <button class="btn-success px-4 text-uppercase rounded text-whiteborder  border-0 ">
-                                <div class="all d-flex gap-3 align-items-center ">
-                                    <div><i class="fa-solid fa-truck d"></i></div>
                                     <div class="d-flex flex-column">
                                         <a class="text-decoration-none" href="locations.html"><span
                                                 class="text-white fw-normal">Order</span></a>
                                         <a class="text-decoration-none" href="locations-deliver.html"><span
-                                                class="fw-bolder text-white ">Delivery</span></a>
+                                                class="fw-bolder text-white ">Carryout</span></a>
+                                    </div>
+                                </div>
+
+                            </button>
+                            <button class="mybtn px-4 text-uppercase rounded text-whiteborder  border-0 ">
+                                <div class="all d-flex gap-3 align-items-center ">
+                                    <div><i class="fa-solid fa-truck d"></i></div>
+                                    <div class="d-flex flex-column">
+                                        <span class="text-white fw-normal">Order</span>
+                                        <span class="fw-bolder text-white ">Delivery</span>
                                     </div>
                                 </div>
                             </button>
 
-                            <button class="btn mx-2 fw-bold">English <br>
-                                <i class="fa-solid fa-language"></i></i></button>
+                            <div class="d-flex gap-1  align-items-center">
+                                <button class="btn mx-2 fw-bold d-block">English <br>
+                                    <i class="fa-solid fa-language fs-5"></i></i></button>
 
-                            <li class="nav-item dropdown" style="list-style: none" ;>
-                                <a class="nav-link dropdown-toggle" style="list-style: none" ; href="#"
-                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <button class="btn "><i class="fa-regular fa-user"></i></button>
-                                </a>
-                                <ul style="list-style: none;" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" style="list-style: none" ; href="#">Login</a></li>
-                                    <li><a class="dropdown-item" style="list-style: none" ; href="#">Sign Up</a>
-                                    </li>
+                                <li class="nav-item dropdown" style="list-style: none" ;>
+                                    <a class="nav-link dropdown-toggle" style="list-style: none" ; href="#"
+                                        id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="true">
+                                        <button class="btn "><i class="fa-regular fa-user fs-5"></i></button>
+                                    </a>
+                                    <ul style="list-style: none;" class="dropdown-menu fs-5"
+                                        aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" style="list-style: none" ;
+                                                href="login.html">Login</a></li>
+                                        <li><a class="dropdown-item" style="list-style: none" ; href="signup.html">Sign
+                                                Up</a>
+                                        </li>
 
-                                </ul>
-                            </li>
-                            <button class="btn mx-2 fw-bold"> <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </ul>
+                                </li>
+                                <button class="btn mx-2 fw-bold"> <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
 
 
                         </div>
@@ -109,8 +131,8 @@
                     <div class="container-fluid  hero-container">
                         <div class="total d-flex justify-content-between align-items-center p-2 flex-wrap">
                             <div class="left d-flex flex-column align-items-center">
-                                <h2 class="fw-bolder fs-1 text-uppercase">Need a hand <br> with your <br> order?</h2>
-                                <img class="img-fluid" src="images/hero.jpg" alt="">
+                                <h2 class="fw-bolder fs-1 text-uppercase text-wrap">Need a hand with your  order?</h2>
+                                <img class="img-fluid" src="images/menu/cajun.jpeg" alt="">
                             </div>
                             <div class="right mr-2">
                                 <p class="text-uppercase text-center">how many in your crew ?</p>
@@ -122,18 +144,39 @@
                                 <div class="how-hungry p-4 ">
                                     <p class="text-center">How Hungry ?</p>
 
-                                    <div
-                                        class="tab  d-flex align-items-center justify-content-between border border-dark rounded ">
+
+                                    <div class="btns">
+                                        <div class="row text-center">
+                                            <div class="col-12 col-md-4 col-lg-4 col-12 ">
+                                                <button type="button"
+                                                    class="btn border border-dark px-4 fs-4 herostyle fw-bold w-100"
+                                                    style="background: #BDBDBD;">Snacky</button>
+                                            </div>
+                                        <div class="col-12 col-md-4 col-lg-4 col-12">
+                                            <button type="button"
+                                                class="btn border border-dark px-4 fs-4 herostyle w-100">Hungary</button>
+                                        </div>
+                                        <div class="col-12 col-md-4 col-lg-4 col-12">
+                                            <button type="button"
+                                                class="btn border border-dark px-4 fs-4 herostyle w-100">Straving</button>
+                                        </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <!-- <div
+                                        class="tab  d-flex flex-wrap  align-items-center justify-content-between border border-dark rounded ">
                                         <button type="button" class="btn border border-dark px-4 fs-4 herostyle fw-bold"
                                             style="background: #BDBDBD;">Snacky</button>
                                         <button type="button"
                                             class="btn border border-dark px-4 fs-4 herostyle ">Hungary</button>
                                         <button type="button"
                                             class="btn border border-dark px-4 fs-4 herostyle">Straving</button>
-                                    </div>
+                                    </div> -->
                                     <div class="div text-center">
-                                        <a href="/runthis.html"> <button type="button"
-                                                class="text-uppercase btn-lg fs-5 text-white fw-bolder mt-4 px-4  rounded py-3 btn-success">Run
+                                        <a href="/"> <button type="button"
+                                                class="text-uppercase btn-lg fs-5 text-white fw-bolder mt-4 px-4  rounded py-3 mybtn">Run
                                                 this
                                                 number <i class="fa-solid fa-arrow-right"></i> </button></a>
                                     </div>
@@ -167,7 +210,7 @@
                 <li>CONTACTS</li>
                 <li>GIFT CARDS</li>
                 <li> CAREERS</li>
-                <li>WINGSTOP CHARITIES</li>
+                <li>MilkSoulFood CHARITIES</li>
                 <li>NEWS & STORIES</li>
             </ul>
         </div>
@@ -180,7 +223,7 @@
             <li>Sitemap</li>
             <li>Accessibility</li>
             <li>Investor Relations</li>
-            <li>Own a Wingstop</li>
+            <li>Own a MilkSoulFood</li>
             <li>Nutritional Info</li>
             <li>Allergen Info</li>
             <li>FAQ</li>
@@ -208,7 +251,7 @@
             </div>
 
         </div>
-        <p class="mb-2 text-center">&copy; Wingstop Restaurants, Inc. 2024 -
+        <p class="mb-2 text-center">&copy; MilkSoulFood Restaurants, Inc. 2024 -
             <script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
         </p>
     </footer>
