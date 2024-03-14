@@ -731,280 +731,282 @@
                                                     <p>Make it a combo?</p>
                                                 </div>
                                                 <div class="d-flex align-items-center gap-4 justify-content-between">
-                                                    <p>Yes <input type="radio" name="combo" value="yes"></p>
-                                                    <p>No <input type="radio" name="combo" value="no"></p>
+                                                    <p>Yes <input id="yes" type="radio" name="combo" value="yes"></p>
+                                                    <p>No <input id="no" type="radio" name="combo" value="no" checked></p>
                                                 </div>
                                             </div>
-
-                                            <div class="select-sides p-1 border  rounded">
-                                                <div class="d-flex align-items-start gap-2">
-                                                    <h6>Select Sides</h6>
-                                                    <p style="font-size: 12px; color: red;" class="fw-bold"> Required*
-                                                    </p>
-                                                </div>
-                                                <div class="side d-flex flex-wrap gap-1 text-wrap">
-
-                                                    <div style="min-width: 200px;"
-                                                        class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Original Fries</h6>
-                                                        <p>+$2.49</p>
+                                            <div id="show-it" class="hidden">
+                                                <div class="select-sides p-1 border  rounded">
+                                                    <div class="d-flex align-items-start gap-2">
+                                                        <h6>Select Sides</h6>
+                                                        <p style="font-size: 12px; color: red;" class="fw-bold"> Required*
+                                                        </p>
                                                     </div>
-                                                    <div style="min-width: 200px;"
-                                                        class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Large Original Fries</h6>
-                                                        <p>+$3.49</p>
-                                                    </div>
-                                                    <div style="min-width: 200px;"
-                                                        class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Cheese Fries</h6>
-                                                        <p>+$3.79</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Cheese & Bacon Fries</h6>
-                                                        <p>+$3.79</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Ultimate Fries</h6>
-                                                        <p>+$3.79</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Mozzarella Sticks</h6>
-                                                        <p>+$4.29</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Miss Vickie's Chips - Sea Salt</h6>
-                                                        <p>+$1.99</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Regular Louisiana Cajun Fries</h6>
-                                                        <p>+$2.29</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Large Louisiana Cajun Fries</h6>
-                                                        <p>+$3.29</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="addons my-2 border p-2">
-                                                <div class="addon">
-                                                    <h6>Most Popular Add Ons</h6>
-                                                </div>
-                                                <div class="single-addons">
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Jalapeños</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="extras my-2 border p-1">
-                                                <div class="extra">
-                                                    <h6 class="">Extras</h6>
-                                                    <div class="single-extra d-flex flex-wrap gap-1 align-items-center">
-                                                        <div style="min-width: 200px; max-width:200.5px"
-                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                            <h6 class="text-wrap">Extra Cheese Sauce</h6>
-                                                            <p>+$1.00</p>
+                                                    <div class="side d-flex flex-wrap gap-1 text-wrap">
+    
+                                                        <div style="min-width: 200px;"
+                                                            class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Original Fries</h6>
+                                                            <p>+$2.49</p>
+                                                        </div>
+                                                        <div style="min-width: 200px;"
+                                                            class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Large Original Fries</h6>
+                                                            <p>+$3.49</p>
+                                                        </div>
+                                                        <div style="min-width: 200px;"
+                                                            class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Cheese Fries</h6>
+                                                            <p>+$3.79</p>
                                                         </div>
                                                         <div style="min-width: 200px; max-width:200.5px"
                                                             class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                            <h6 class="text-wrap">Extra Ranch</h6>
-                                                            <p>$00</p>
+                                                            <h6 class="text-wrap">Cheese & Bacon Fries</h6>
+                                                            <p>+$3.79</p>
                                                         </div>
                                                         <div style="min-width: 200px; max-width:200.5px"
                                                             class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                            <h6 class="text-wrap">Extra Cheese Sauce</h6>
-                                                            <p>+$1.00</p>
+                                                            <h6 class="text-wrap">Ultimate Fries</h6>
+                                                            <p>+$3.79</p>
                                                         </div>
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="remove-toppings my-2 border p-1">
-                                                <div class="Remove-topping">
-                                                    <h6 class="">Remove Toppings</h6>
-                                                    <div
-                                                        class="single-remove d-flex flex-wrap gap-1 align-items-center">
                                                         <div style="min-width: 200px; max-width:200.5px"
                                                             class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                            <h6 class="text-wrap">No Salt</h6>
+                                                            <h6 class="text-wrap">Mozzarella Sticks</h6>
+                                                            <p>+$4.29</p>
                                                         </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ranch-sauces my-2 border p-1">
-                                                <div class="ranch-sauce">
-                                                    <h6 class="">Would you like Ranch Sauce on the Side?</h6>
-                                                    <div
-                                                        class="single-ranch-sauce d-flex flex-wrap gap-1 align-items-center">
                                                         <div style="min-width: 200px; max-width:200.5px"
                                                             class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                            <h6 class="text-wrap">Yes</h6>
+                                                            <h6 class="text-wrap">Miss Vickie's Chips - Sea Salt</h6>
+                                                            <p>+$1.99</p>
                                                         </div>
-
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Regular Louisiana Cajun Fries</h6>
+                                                            <p>+$2.29</p>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Large Louisiana Cajun Fries</h6>
+                                                            <p>+$3.29</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="addons my-2 border p-2">
+                                                    <div class="addon">
+                                                        <h6>Most Popular Add Ons</h6>
+                                                    </div>
+                                                    <div class="single-addons">
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Jalapeños</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="extras my-2 border p-1">
+                                                    <div class="extra">
+                                                        <h6 class="">Extras</h6>
+                                                        <div class="single-extra d-flex flex-wrap gap-1 align-items-center">
+                                                            <div style="min-width: 200px; max-width:200.5px"
+                                                                class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                                <h6 class="text-wrap">Extra Cheese Sauce</h6>
+                                                                <p>+$1.00</p>
+                                                            </div>
+                                                            <div style="min-width: 200px; max-width:200.5px"
+                                                                class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                                <h6 class="text-wrap">Extra Ranch</h6>
+                                                                <p>$00</p>
+                                                            </div>
+                                                            <div style="min-width: 200px; max-width:200.5px"
+                                                                class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                                <h6 class="text-wrap">Extra Cheese Sauce</h6>
+                                                                <p>+$1.00</p>
+                                                            </div>
+    
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="remove-toppings my-2 border p-1">
+                                                    <div class="Remove-topping">
+                                                        <h6 class="">Remove Toppings</h6>
+                                                        <div
+                                                            class="single-remove d-flex flex-wrap gap-1 align-items-center">
+                                                            <div style="min-width: 200px; max-width:200.5px"
+                                                                class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                                <h6 class="text-wrap">No Salt</h6>
+                                                            </div>
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="ranch-sauces my-2 border p-1">
+                                                    <div class="ranch-sauce">
+                                                        <h6 class="">Would you like Ranch Sauce on the Side?</h6>
+                                                        <div
+                                                            class="single-ranch-sauce d-flex flex-wrap gap-1 align-items-center">
+                                                            <div style="min-width: 200px; max-width:200.5px"
+                                                                class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                                <h6 class="text-wrap">Yes</h6>
+                                                            </div>
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="select-drinks p-1 border  rounded">
+                                                    <div class="d-flex align-items-start gap-2">
+                                                        <h6>Select Drinks</h6>
+                                                        <p style="font-size: 12px; color: red;" class="fw-bold">
+                                                        </p>
+                                                    </div>
+                                                    <div class="side d-flex flex-wrap gap-1 text-wrap">
+    
+                                                        <div style="min-width: 200px;"
+                                                            class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Regular Soft Drink</h6>
+                                                            <p>+$1.99</p>
+                                                        </div>
+                                                        <div style="min-width: 200px;"
+                                                            class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Regular Original Lemonade</h6>
+                                                            <p>+$2.49</p>
+                                                        </div>
+                                                        <div style="min-width: 200px;"
+                                                            class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Regular Peach Lemonade</h6>
+                                                            <p>+$3.29</p>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Regular Strawberry Lemonade</h6>
+                                                            <p>+$3.29</p>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Regular Sweet Tea</h6>
+                                                            <p>+$1.99</p>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Regular Unsweet Tea</h6>
+                                                            <p>+$1.99</p>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Large Soft Drink</h6>
+                                                            <p>+$2.99</p>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Large Original Lemonade</h6>
+                                                            <p>+$2.29</p>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Large Peach Lemonade</h6>
+                                                            <p>+$4.29</p>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Large Strawberry Lemonade</h6>
+                                                            <p>+$4.29</p>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Large Sweet Tea</h6>
+                                                            <p>+$2.99</p>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Large Unsweet Tea</h6>
+                                                            <p>+$2.99</p>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Dasani Bottled Water 16.9oz</h6>
+                                                            <p>+$1.99</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="select-soft-drinks p-1 border  rounded">
+                                                    <div class="d-flex align-items-start gap-2">
+                                                        <h6>Select Soft Drinks</h6>
+                                                        <p style="font-size: 12px; color: red;" class="fw-bold">
+                                                        </p>
+                                                    </div>
+                                                    <div class="side d-flex flex-wrap gap-1 text-wrap">
+    
+                                                        <div style="min-width: 200px;"
+                                                            class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Coke </h6>
+                                                            <small>230 Calories</small>
+                                                        </div>
+                                                        <div style="min-width: 200px;"
+                                                            class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Diet Coke</h6>
+                                                            <p></p>
+                                                        </div>
+                                                        <div style="min-width: 200px;"
+                                                            class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Coke Zero</h6>
+                                                            <small>Adds 230 Calories</small>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Sprite</h6>
+                                                            <small>Adds 230</small>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Hi-C Flashin' Fruit Punch</h6>
+                                                            <small>Adds 240 Calories</small>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Barq's Root Beer</h6>
+                                                            <small>Adds 250 Calories</small>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Dr. Pepper </h6>
+                                                            <small>Adds 180 Calories</small>
+                                                        </div>
+                                                        <div style="min-width: 200px; max-width:200.5px"
+                                                            class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Fanta Orange</h6>
+    
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                                <div class="ice-options p-1 border  rounded">
+                                                    <div class="d-flex align-items-start gap-2">
+                                                        <h6>Ice Options</h6>
+                                                        <p style="font-size: 12px; color: red;" class="fw-bold">
+                                                        </p>
+                                                    </div>
+                                                    <div class="side d-flex flex-wrap gap-1 text-wrap">
+    
+                                                        <div style="min-width: 200px;"
+                                                            class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">No Ice</h6>
+                                                        </div>
+                                                        <div style="min-width: 200px;"
+                                                            class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Lite Ice</h6>
+                                                        </div>
+                                                        <div style="min-width: 200px;"
+                                                            class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
+                                                            <h6 class="text-wrap">Extra Ice</h6>
+                                                        </div>
+    
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="select-drinks p-1 border  rounded">
-                                                <div class="d-flex align-items-start gap-2">
-                                                    <h6>Select Drinks</h6>
-                                                    <p style="font-size: 12px; color: red;" class="fw-bold">
-                                                    </p>
-                                                </div>
-                                                <div class="side d-flex flex-wrap gap-1 text-wrap">
-
-                                                    <div style="min-width: 200px;"
-                                                        class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Regular Soft Drink</h6>
-                                                        <p>+$1.99</p>
-                                                    </div>
-                                                    <div style="min-width: 200px;"
-                                                        class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Regular Original Lemonade</h6>
-                                                        <p>+$2.49</p>
-                                                    </div>
-                                                    <div style="min-width: 200px;"
-                                                        class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Regular Peach Lemonade</h6>
-                                                        <p>+$3.29</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Regular Strawberry Lemonade</h6>
-                                                        <p>+$3.29</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Regular Sweet Tea</h6>
-                                                        <p>+$1.99</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Regular Unsweet Tea</h6>
-                                                        <p>+$1.99</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Large Soft Drink</h6>
-                                                        <p>+$2.99</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Large Original Lemonade</h6>
-                                                        <p>+$2.29</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Large Peach Lemonade</h6>
-                                                        <p>+$4.29</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Large Strawberry Lemonade</h6>
-                                                        <p>+$4.29</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Large Sweet Tea</h6>
-                                                        <p>+$2.99</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Large Unsweet Tea</h6>
-                                                        <p>+$2.99</p>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Dasani Bottled Water 16.9oz</h6>
-                                                        <p>+$1.99</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="select-soft-drinks p-1 border  rounded">
-                                                <div class="d-flex align-items-start gap-2">
-                                                    <h6>Select Soft Drinks</h6>
-                                                    <p style="font-size: 12px; color: red;" class="fw-bold">
-                                                    </p>
-                                                </div>
-                                                <div class="side d-flex flex-wrap gap-1 text-wrap">
-
-                                                    <div style="min-width: 200px;"
-                                                        class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Coke </h6>
-                                                        <small>230 Calories</small>
-                                                    </div>
-                                                    <div style="min-width: 200px;"
-                                                        class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Diet Coke</h6>
-                                                        <p></p>
-                                                    </div>
-                                                    <div style="min-width: 200px;"
-                                                        class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Coke Zero</h6>
-                                                        <small>Adds 230 Calories</small>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Sprite</h6>
-                                                        <small>Adds 230</small>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Hi-C Flashin' Fruit Punch</h6>
-                                                        <small>Adds 240 Calories</small>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Barq's Root Beer</h6>
-                                                        <small>Adds 250 Calories</small>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Dr. Pepper </h6>
-                                                        <small>Adds 180 Calories</small>
-                                                    </div>
-                                                    <div style="min-width: 200px; max-width:200.5px"
-                                                        class="p-1 border border-dark border-2 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Fanta Orange</h6>
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="ice-options p-1 border  rounded">
-                                                <div class="d-flex align-items-start gap-2">
-                                                    <h6>Ice Options</h6>
-                                                    <p style="font-size: 12px; color: red;" class="fw-bold">
-                                                    </p>
-                                                </div>
-                                                <div class="side d-flex flex-wrap gap-1 text-wrap">
-
-                                                    <div style="min-width: 200px;"
-                                                        class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">No Ice</h6>
-                                                    </div>
-                                                    <div style="min-width: 200px;"
-                                                        class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Lite Ice</h6>
-                                                    </div>
-                                                    <div style="min-width: 200px;"
-                                                        class="p-1 border border-dark border-1 bg-light rounded d-flex flex-column align-items-center">
-                                                        <h6 class="text-wrap">Extra Ice</h6>
-                                                    </div>
-
-                                                </div>
-                                            </div>
+ 
 
 
 
@@ -1111,6 +1113,9 @@
 
     <!-- custom linked css  -->
     <script src="js/app.js">
+
+    </script>
+    <script src="js/order.js">
 
     </script>
 

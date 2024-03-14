@@ -97,7 +97,8 @@ a {
 
 .menu-details:hover img,
 .menu-details:hover h4 {
-    transform: scale(.9); 
+    transform: scale(.9);
+}
 
 .menu-heading {
     color: #333; 
@@ -120,4 +121,18 @@ a {
 
 .mybtn:hover {
     background-color: #E56E00; 
+}
+
+
+/* show and hide div on radio check  */
+
+#show-it {
+    display: none;
+    transition: opacity 0.9s ease; 
+    opacity: 0; 
+}
+
+.show {
+    display: block;
+    opacity: 1; 
 }
