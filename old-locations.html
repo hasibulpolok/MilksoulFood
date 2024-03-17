@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>MilkSoulFood</title>
     <!-- x-icon  -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -39,16 +39,6 @@
         .myetxt {
             color: #f5763f;
         }
-
-        .shop-item {
-        cursor: pointer;
-    }
-
-    /* Change color on hover */
-    .shop-item:hover {
-        background-color: #f1f1f1;
-    }
-        
     </style>
 
 
@@ -77,25 +67,23 @@
                                     <ul class="dropdown-menu p-4">
                                         <!-- Add your dropdown items here -->
                                         <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
-                                                href="/categeories/breakfast.html">Breakfast</a></li>
+                                                href="categeories/breakfast.html">Breakfast</a></li>
                                         <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
-                                                href="submenu2.html">Omlets</a></li>
+                                                href="categeories/omlet.html">Omlets</a></li>
                                         <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
-                                                href="submenu3.html">Kids Breakfst</a></li>
+                                                href="categeories/kidsbreakfast.html">Kids Breakfst</a></li>
                                         <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
-                                                href="submenu3.html">Kids Lunch</a></li>
+                                                href="categeories/kidslunch.html">Kids Lunch</a></li>
                                         <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
-                                                href="submenu3.html">Burger & Sandwiches</a></li>
+                                                href="categeories/burgerandsandwich.html">Burger & Sandwiches</a></li>
                                         <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
-                                                href="submenu3.html">Grilled Fish</a></li>
+                                                href="categeories/burgerandsandwich.html">Grilled Fish</a></li>
                                         <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
-                                                href="submenu3.html">Salads</a></li>
+                                                href="categeories/salads.html">Salads</a></li>
                                         <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
-                                                href="submenu3.html">Dinner</a></li>
+                                                href="categeories/dinner.html">Dinner</a></li>
                                         <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
-                                                href="submenu3.html">Side Orders</a></li>
-                                        <li><a class=" text-dark fw-bold fs-6 text-decoration-none"
-                                                href="submenu3.html">Wings</a></li>
+                                                href="categeories/wings.html">Wings</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -107,6 +95,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-dark fw-bolder fs-5 " href="locations.html">Locations</a>
                                 </li>
+
 
                             </ul>
                             <button class="mybtn px-4 text-uppercase rounded text-white border no-border">
@@ -129,7 +118,9 @@
                                     <a class="nav-link dropdown-toggle" style="list-style: none" ; href="#"
                                         id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="true">
-                                        <button class="btn "><i class="fa-regular fa-user fs-5"></i></button>
+                                        <button class="btn">
+                                            <i class="fa-solid fa-right-to-bracket" style="color: black;"></i>
+                                        </button>
                                     </a>
                                     <ul style="list-style: none;" class="dropdown-menu fs-5"
                                         aria-labelledby="navbarDropdown">
@@ -141,7 +132,8 @@
 
                                     </ul>
                                 </li>
-                                <button class="btn mx-2 fw-bold"> <i class="fa-solid fa-cart-shopping"></i></button>
+                                <a href="/checkout.html"><button class="btn mx-2 fw-bold"> <i
+                                            class="fa-solid fa-cart-shopping"></i></button></a>
                             </div>
 
 
@@ -184,7 +176,7 @@
 
                             <br>
                             <p class="fw-bold m-2 ">Search Zip or City, State</p>
-                            <input id="searchInput" style=" border-radius:25px; padding: 5px 100px;" type="search" name="" id=""
+                            <input style=" border-radius:25px; padding: 5px 100px;" type="search" name="" id=""
                                 class=" rounded p-2 w-100">
 
                             <!-- Loader element -->
@@ -202,17 +194,15 @@
 
 
                                 <div id="searchResults"></div>
-                                <div id="noLocationSection">
-                                    <i style="font-size: 50px;" class="d-block fa-solid fa-location-dot my-3 "></i>
-                                    <h3>NO LOCATION, NO PROBLEM</h3>
-                                    <p style="font-size: 15px;;" class="fw-normal ">
-                                        Get the most flavor for your click when you log in. View your recent locations for
-                                        faster checkout, every time.
-                                    </p>
-                                    <button class="btn btn-lg  text-uppercase text-bolder fs-4 w-100 mybtn  text-white">use
-                                        my
-                                        current location</button>
-                                </div>
+                                <i style="font-size: 50px;" class="d-block fa-solid fa-location-dot my-3 "></i>
+                                <h3>NO LOCATION, NO PROBLEM</h3>
+                                <p style="font-size: 15px;;" class="fw-normal ">
+                                    Get the most flavor for your click when you log in . View your recent locations for
+                                    faster checkout, every time.
+                                </p>
+                                <button class="btn btn-lg  text-uppercase text-bolder fs-4 w-100 mybtn  text-white">use
+                                    my
+                                    current location</button>
 
                             </div>
                         </div>
@@ -292,53 +282,12 @@
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script>
-        document.getElementById('searchInput').addEventListener('input', function () {
-            var input = this.value.trim();
-            var locationSection = document.getElementById('searchResults');
-            var noLocationSection = document.getElementById('noLocationSection');
-            var loader = document.getElementById('loader');
-    
-            if (input.length > 0) {
-                loader.style.display = 'block';
-                noLocationSection.style.display = 'none';
-    
-                
-                setTimeout(function () {
-                   
-                    var searchResults = [
-                        { name: "MilkSoulFood", address: "Address 1" },
-                        { name: "MilkSoulFood 2", address: "Address 2" },
-                        
-                    ];
-    
-                    // Clear previous search results
-                    locationSection.innerHTML = '';
-    
-                    // Display search results
-                    searchResults.forEach(function (result) {
-                        var shopDiv = document.createElement('div');
-                        shopDiv.innerHTML = '<p><strong>' + result.name + '</strong><br>' + result.address + '</p>';
-                        shopDiv.classList.add('shop-item');
-                        shopDiv.addEventListener('click', function () {
-                            window.location.href = '/newmenu.html'; 
-                        });
-                        locationSection.appendChild(shopDiv);
-                    });
-    
-                    loader.style.display = 'none';
-                    locationSection.style.display = 'block';
-                }, 1000);
-            } else {
-                noLocationSection.style.display = 'block';
-                locationSection.style.display = 'none';
-            }
-        });
+
+    <!-- custom linked css  -->
+    <script src="js/app.js">
+
     </script>
 
-<script src="js/app.js">
-
-</script>
 
 </body>
 

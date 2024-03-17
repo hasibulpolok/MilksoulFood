@@ -74,3 +74,51 @@ var numberElement = document.getElementById('number');
 
 
 
+
+  // Function to simulate loading
+function showLoader() {
+    // Show loader
+    document.getElementById('loader').style.display = 'block';
+    // Simulate loading time (you can replace this with actual AJAX request)
+    setTimeout(hideLoader, 2000); // Assuming it takes 2 seconds to load
+}
+
+function hideLoader() {
+    // Hide loader
+    document.getElementById('loader').style.display = 'none';
+    // Display search results
+    displaySearchResults();
+}
+
+function displaySearchResults() {
+    // Simulated search results
+    const results = [
+        { name: 'Shop 1', address: '123 Main St' },
+        { name: 'Shop 2', address: '456 Elm St' },
+        { name: 'Shop 3', address: '789 Oak St' }
+    ];
+
+    const resultsContainer = document.getElementById('searchResults');
+    // Clear previous results
+    resultsContainer.innerHTML = '';
+
+    // Display each result
+    results.forEach(result => {
+        const shopElement = document.createElement('div');
+        shopElement.innerHTML = `
+            <p><strong>${result.name}</strong></p>
+            <p>${result.address}</p>
+        `;
+        // Make shop name and address clickable
+        shopElement.addEventListener('click', () => {
+            // Navigate to another page (you can set the URL dynamically based on shop)
+            window.location.href = 'another_page.html';
+        });
+        resultsContainer.appendChild(shopElement);
+    });
+}
+
+window.onload = function () {
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', showLoader);
+};
