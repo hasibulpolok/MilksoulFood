@@ -2,21 +2,21 @@ document.addEventListener('DOMContentLoaded', function () {
     var menuHover = document.getElementById('menu-hover');
     var dropdownMenu = menuHover.querySelector('.dropdown-menu');
 
-    // Show dropdown on hover
+    
     menuHover.addEventListener('mouseover', function () {
         dropdownMenu.style.display = 'block';
     });
 
-    // Hide dropdown on mouseout
+    
     menuHover.addEventListener('mouseout', function () {
         dropdownMenu.style.display = 'none';
     });
 
-    // Add click event listeners to submenu links
+    
     var submenuLinks = dropdownMenu.querySelectorAll('a');
     submenuLinks.forEach(function (link) {
         link.addEventListener('click', function () {
-            // Get the href attribute and navigate to the corresponding route
+            
             var href = link.getAttribute('href');
             if (href) {
                 window.location.href = href;
@@ -72,53 +72,62 @@ var numberElement = document.getElementById('number');
     numberElement.innerText = currentNumber;
   }
 
+  
+
+// updating the tips calculator 
 
 
 
-  // Function to simulate loading
-function showLoader() {
-    // Show loader
-    document.getElementById('loader').style.display = 'block';
-    // Simulate loading time (you can replace this with actual AJAX request)
-    setTimeout(hideLoader, 2000); // Assuming it takes 2 seconds to load
+let selectedButton = null;
+
+function updateTip(tipPercentage) {
+
+    if (selectedButton !== null) {
+        selectedButton.classList.remove("clicked");
+    }
+
+    
+    selectedButton = event.target;
+    selectedButton.classList.add("clicked");
+
+    const subtotal = 21.98; 
+    const taxRate = 0.06; 
+    const tipAmount = (subtotal * tipPercentage) / 100;
+    const totalTax = subtotal * taxRate;
+    const total = subtotal + totalTax + tipAmount;
+
+    
+    document.getElementById("subtotalValue").textContent = `$${(subtotal + tipAmount).toFixed(2)}`;
+    document.getElementById("taxValue").textContent = `$${totalTax.toFixed(2)}`;
+    document.getElementById("totalValue").textContent = `$${total.toFixed(2)}`;
 }
 
-function hideLoader() {
-    // Hide loader
-    document.getElementById('loader').style.display = 'none';
-    // Display search results
-    displaySearchResults();
+function toggleCustomTip() {
+    const customTipSection = document.getElementById("customTip");
+    customTipSection.style.display = customTipSection.style.display === "none" ? "block" : "none";
 }
 
-function displaySearchResults() {
-    // Simulated search results
-    const results = [
-        { name: 'Shop 1', address: '123 Main St' },
-        { name: 'Shop 2', address: '456 Elm St' },
-        { name: 'Shop 3', address: '789 Oak St' }
-    ];
+function applyCustomTip() {
+    const customTipAmount = parseFloat(document.getElementById("customTipAmount").value);
+    if (!isNaN(customTipAmount)) {
+        
+        const subtotal = 21.98; 
+        const taxRate = 0.06; 
+        const totalTax = subtotal * taxRate;
+        const total = subtotal + totalTax + customTipAmount;
 
-    const resultsContainer = document.getElementById('searchResults');
-    // Clear previous results
-    resultsContainer.innerHTML = '';
-
-    // Display each result
-    results.forEach(result => {
-        const shopElement = document.createElement('div');
-        shopElement.innerHTML = `
-            <p><strong>${result.name}</strong></p>
-            <p>${result.address}</p>
-        `;
-        // Make shop name and address clickable
-        shopElement.addEventListener('click', () => {
-            // Navigate to another page (you can set the URL dynamically based on shop)
-            window.location.href = 'another_page.html';
-        });
-        resultsContainer.appendChild(shopElement);
-    });
+        
+        document.getElementById("subtotalValue").textContent = `$${(subtotal + customTipAmount).toFixed(2)}`;
+        document.getElementById("taxValue").textContent = `$${totalTax.toFixed(2)}`;
+        document.getElementById("totalValue").textContent = `$${total.toFixed(2)}`;
+    }
 }
 
-window.onload = function () {
-    const searchInput = document.getElementById('searchInput');
-    searchInput.addEventListener('input', showLoader);
-};
+document.getElementById("customTipAmount").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        applyCustomTip();
+    }
+});
+
+
+  

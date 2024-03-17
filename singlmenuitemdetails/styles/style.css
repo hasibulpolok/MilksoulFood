@@ -35,16 +35,7 @@ header {
     border: 15px 15px 20px rgba(0, 0, 0, 0.05), -15px -15px #fff;
 }
 
-*/ #rangeValue {
-    position: relative;
-    text-align: center;
-    width: 60px;
-    font-size: 1.25rem;
-    background: #27a0ff;
-    margin-left: 15px;
-    border-radius: 25px;
 
-}
 
 .find-a-wingstone {
     background: url('/images/location.avif');

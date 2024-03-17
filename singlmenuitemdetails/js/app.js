@@ -27,6 +27,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+//  selecte single sides  on breakfastdetailspage/order
+
+document.querySelectorAll('.selected').forEach(item => {
+    item.addEventListener('click', event => {
+        item.classList.toggle('active');
+    })
+});
+
+// this is for show transition on make it combo btn 
+
+
 
 
 
